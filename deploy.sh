@@ -18,7 +18,13 @@ GLOBAL_USER_EMAIL=$(git config --global user.email)
 if [ ! -d ".git" ]; then
     git init
     git branch -M gh-pages
-    git remote add origin https://github.com/duanxm/cleanMaster.git
+    # 使用 SSH URL
+    git remote add origin git@github.com:duanxm/cleanMaster.git
+fi
+
+# 确保 remote 使用 SSH
+if git remote get-url origin | grep -q "https://"; then
+    git remote set-url origin git@github.com:duanxm/cleanMaster.git
 fi
 
 # 设置本地仓库的 Git 配置（使用全局配置）
