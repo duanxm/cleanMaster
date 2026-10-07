@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>Privacy Policy - Secure Camera</title><style>:root { color-scheme: light dark; --bg: #fcfdfd; --fg: #19252c; --muted: #627481; --line: #dce3e8; --accent: #225ae3; --warning: #a02d32; }
+@media(prefers-color-scheme: dark) { :root { --bg: #121617; --fg: #f4f7f6; --muted: #97a4a0; --line: #303a37; --accent: #a3f3c4; --warning: #ff928b; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+header, main, footer { max-width: 800px; margin: auto; padding: 24px; }
+header { border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
+.brand { font-size: 20px; font-weight: 700; }
+nav { display: flex; flex-wrap: wrap; gap: 20px; }
+a { color: var(--accent); text-underline-offset: 4px; }
+h1 { font-size: 30px; line-height: 1.3; margin: 16px 0; }
+h2 { font-size: 21px; line-height: 1.4; margin: 32px 0 12px; }
+p, ul { margin: 0 0 18px; }
+li { margin-bottom: 8px; }
+.meta, footer { color: var(--muted); font-size: 14px; }
+.warning { border-left: 3px solid var(--warning); padding-left: 16px; color: var(--warning); }
+footer { border-top: 1px solid var(--line); }
+@media(max-width: 480px) { header, main, footer { padding: 20px; } h1 { font-size: 26px; } }</style></head><body><header><span class="brand">Secure Camera · 安全相机</span><nav aria-label="语言与政策"><a href="index.html" lang="en">English</a><a href="privacy-zh.html" lang="zh-CN">简体中文</a><a href="terms-zh.html">服务条款</a></nav></header><main><h1>隐私政策</h1>
+<p class="meta">安全相机（Secure Camera / SecureCamera） · Android 包名：com.secure.camera<br>生效及更新日期：2026 年 10 月 7 日</p>
+<p>本政策说明安全相机如何访问、使用、保存和共享信息，适用于开发者提供的 Android 应用及本政策页面。隐私联系邮箱：<a href="mailto:smallduanmeng@gmail.com">smallduanmeng@gmail.com</a>。</p>
+<p class="warning"><strong>重要提醒：</strong>照片和视频保存在当前 App 的私有空间内。卸载 App 或清除应用数据，将永久删除其中的原文件。请提前导出需要保留的内容。已主动导出到系统相册或分享给其他应用的副本，不会因卸载安全相机而被删除。</p>
+<h2>1. 照片、视频与本地设置</h2>
+<p>应用通过相机拍照和录制视频。拍摄内容写入 Android 的应用私有存储空间，不会自动写入系统相册。本地数据库保存文件路径、名称、大小、类型、视频时长、拍摄时间和尺寸，用于展示私密相册。应用不提供账号、媒体云同步或媒体上传服务。</p>
+<p>主题选择、隐私同意状态和录像设置保存在应用内。如果设置相册密码，应用在本地保存密码的 SHA-256 哈希值，而非明文密码。密码用于控制相册入口访问，不代表照片或视频文件已加密。应用不提供密码找回服务。</p>
+<h2>2. 权限用途</h2>
+<ul>
+<li><strong>相机：</strong>用于预览、拍照和录制视频。</li>
+<li><strong>麦克风：</strong>为视频相关功能申请，由 Android 运行时权限机制控制访问。</li>
+<li><strong>存储或媒体权限：</strong>旧版 Android 在主动导出媒体时可能需要存储权限。应用还声明了 Android 媒体访问接口的读取权限，但不会扫描或上传系统相册；拍摄到应用私有空间不需要读取您已有的照片。</li>
+<li><strong>网络：</strong>用于展示政策页面，以及发送下文说明的使用统计和崩溃诊断信息。</li>
+</ul>
+<p>您可以在 Android 系统设置中管理权限。拒绝相关必需权限可能导致相机或导出功能无法正常使用。</p>
+<h2>3. 使用统计与崩溃诊断</h2>
+<p>应用集成 Google Analytics for Firebase 和 Firebase Crashlytics。在您同意应用内隐私提示之前，使用统计采集和崩溃报告自动上传处于关闭状态；同意后启用。这些服务用于了解应用使用情况和排查稳定性问题，不用于上传您拍摄的媒体。</p>
+<p>根据 SDK 和设备配置，Google 可能处理应用实例或安装标识、可用时的广告标识、应用交互事件、应用版本、设备型号、系统版本、语言、时间戳、依据网络信息推断的大致区域、崩溃堆栈及诊断信息。应用不会主动将照片、视频或相册密码附加到统计事件或崩溃报告中。</p>
+<p>服务说明：<a href="https://firebase.google.com/support/privacy">Firebase 隐私与安全</a>、<a href="https://policies.google.com/privacy">Google 隐私政策</a>和<a href="https://support.google.com/analytics/answer/11593727">Google Analytics 数据收集说明</a>。服务数据可能在您所在国家或地区之外处理。</p>
+<h2>4. 主动导出、分享与第三方</h2>
+<p>选择导出时，应用会将副本写入系统相册。具有相应权限的其他应用可能访问该副本，您使用的照片备份服务也可能备份它。选择分享时，Android 会向您选中的接收应用授予所选文件的访问权限；之后适用该应用的隐私规则。除非您删除原文件，否则原文件仍保留在本 App 内。</p>
+<p>Firebase/Google 接收上述统计和诊断数据。访问本网页时，页面托管方 GitHub Pages 会接收 IP 地址、浏览器信息等正常网页请求信息。通过邮箱联系我们时，我们会收到您提供的消息内容和回复地址。我们不出售您拍摄的媒体或相册密码。</p>
+<h2>5. 保存期限、删除与数据丢失</h2>
+<p>本地媒体保存至您主动删除、清除应用数据或卸载应用为止。删除前可先导出。应用没有媒体云恢复功能，并在 Android 云备份和设备迁移规则中排除了应用私有数据。设备厂商的备份或迁移行为可能不同，请勿依赖系统备份来恢复此相册。</p>
+<p>根据 Google 文档，Crashlytics 在保存崩溃堆栈及相关标识 90 天后开始从在线和备份系统移除。Analytics 数据遵循对应项目的保留设置和 Google 服务规则，汇总报告的保留方式可能不同。卸载应用会停止后续应用活动，但不会立即删除 Google 已处理的诊断数据或已导出、已分享的副本。您可通过上述邮箱提出隐私或删除请求；我们会协助处理能够识别并控制的信息。求助时请勿发送私人照片或相册密码。</p>
+<h2>6. 安全措施与您的选择</h2>
+<p>应用依赖 Android 私有存储隔离和可选的相册访问密码，不宣称具备端到端加密或媒体文件加密。在已获取 root 权限、被入侵或已解锁的设备上，这些措施无法保证绝对安全。Firebase 网络传输采用其服务的安全机制。您可以删除本地媒体、撤销权限、清除应用数据或卸载应用来停止使用；如需保留媒体，请先导出。</p>
+<p>根据您所在地区的适用规则，您可能享有访问、更正、删除个人信息、反对处理或向相关机构投诉等权利，可通过邮箱联系我们。应用不要求注册账号，也不会有意向儿童索取个人信息。如您认为儿童提供了个人信息，请联系我们。</p>
+<h2>7. 政策更新与联系</h2>
+<p>应用的数据处理方式变化时，我们可能更新本政策，修订日期显示于页面顶部。如对本政策或数据处理有疑问，请联系 <a href="mailto:smallduanmeng@gmail.com">smallduanmeng@gmail.com</a>。</p></main><footer>Secure Camera · <a href="mailto:smallduanmeng@gmail.com">smallduanmeng@gmail.com</a></footer></body></html>

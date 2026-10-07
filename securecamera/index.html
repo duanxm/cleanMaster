@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>Privacy Policy - Secure Camera</title><style>:root { color-scheme: light dark; --bg: #fcfdfd; --fg: #19252c; --muted: #627481; --line: #dce3e8; --accent: #225ae3; --warning: #a02d32; }
+@media(prefers-color-scheme: dark) { :root { --bg: #121617; --fg: #f4f7f6; --muted: #97a4a0; --line: #303a37; --accent: #a3f3c4; --warning: #ff928b; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+header, main, footer { max-width: 800px; margin: auto; padding: 24px; }
+header { border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
+.brand { font-size: 20px; font-weight: 700; }
+nav { display: flex; flex-wrap: wrap; gap: 20px; }
+a { color: var(--accent); text-underline-offset: 4px; }
+h1 { font-size: 30px; line-height: 1.3; margin: 16px 0; }
+h2 { font-size: 21px; line-height: 1.4; margin: 32px 0 12px; }
+p, ul { margin: 0 0 18px; }
+li { margin-bottom: 8px; }
+.meta, footer { color: var(--muted); font-size: 14px; }
+.warning { border-left: 3px solid var(--warning); padding-left: 16px; color: var(--warning); }
+footer { border-top: 1px solid var(--line); }
+@media(max-width: 480px) { header, main, footer { padding: 20px; } h1 { font-size: 26px; } }</style></head><body><header><span class="brand">Secure Camera</span><nav aria-label="Language and policies"><a href="index.html" lang="en">English</a><a href="privacy-zh.html" lang="zh-CN">简体中文</a><a href="terms.html">Terms</a></nav></header><main><h1>Privacy Policy</h1>
+<p class="meta">Secure Camera (SecureCamera / 安全相机) · Android package: com.secure.camera<br>Effective and last updated: October 7, 2026</p>
+<p>This policy explains how Secure Camera accesses, uses, stores and shares information. It applies to the Android app provided by its developer and to this policy page. Privacy contact: <a href="mailto:smallduanmeng@gmail.com">smallduanmeng@gmail.com</a>.</p>
+<p class="warning"><strong>Important:</strong> Photos and videos are stored in this app's private storage. Uninstalling the app or clearing its data permanently deletes the originals. Export anything you want to keep first. Copies you have exported to the system gallery or shared with another app are not deleted by uninstalling Secure Camera.</p>
+<h2>1. Photos, videos and local settings</h2>
+<p>The app uses the camera to take photos and record videos. Captured media is written to Android app-private storage, not automatically to the system gallery. A local database records each file's path, name, size, type, recording duration, capture time and dimensions so the private gallery can display it. The app does not provide an account, media cloud sync or a media upload service.</p>
+<p>Your theme choice, privacy acceptance and recording settings are stored locally. If you set a gallery password, the app stores a SHA-256 hash locally rather than the plaintext password. Password protection controls access to the gallery; it is not encryption of the photo or video files. There is no password recovery service.</p>
+<h2>2. Permissions</h2>
+<ul>
+<li><strong>Camera:</strong> used for the preview, photos and video capture.</li>
+<li><strong>Microphone:</strong> requested for video-related functionality. Access is controlled by Android's runtime permission system.</li>
+<li><strong>Storage/media:</strong> legacy Android versions may require storage permission when you export media. The app also declares media-read permissions for Android's media access APIs; it does not scan or upload your system gallery. App-private capture does not require access to your existing photos.</li>
+<li><strong>Internet/network:</strong> used to open policy pages and to send the analytics and crash diagnostics described below.</li>
+</ul>
+<p>You can manage permissions in Android Settings. Denying a required permission can prevent the corresponding camera or export feature from working.</p>
+<h2>3. Analytics and crash diagnostics</h2>
+<p>The app includes Google Analytics for Firebase and Firebase Crashlytics. Analytics collection and automatic crash-report upload are disabled before you accept the in-app privacy notice and enabled afterwards. These services are used to understand app usage and investigate stability problems, not to upload your captured media.</p>
+<p>Depending on the SDK and device configuration, Google may process app-instance or installation identifiers, advertising identifiers when available, app interaction events, app version, device model, operating-system version, language, timestamps, approximate region derived from network information, crash stack traces and diagnostic messages. The app does not deliberately attach photos, videos or your gallery password to analytics events or crash reports.</p>
+<p>Service documentation: <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and <a href="https://support.google.com/analytics/answer/11593727">Google Analytics data collection</a>. Google may process service data outside your country.</p>
+<h2>4. Export, sharing and third parties</h2>
+<p>When you choose Export, the app writes a copy to the system gallery. That copy can be accessed by other apps with the relevant permissions and may be included in any photo-backup service you use. When you choose Share, Android grants the selected receiving app access to the chosen file. The receiving app's privacy practices then apply. The original remains in this app unless you delete it.</p>
+<p>Firebase/Google receives the analytics and diagnostics described above. Opening this hosted page also sends normal web requests, including your IP address and browser information, to the hosting provider, GitHub Pages. Contacting us by email provides the contents of your message and return address. We do not sell your captured media or gallery password.</p>
+<h2>5. Retention, deletion and loss of data</h2>
+<p>Local media is retained until you delete it, clear app data or uninstall the app. You can export media before deleting it. The app has no media cloud restore feature and excludes its private data from Android cloud-backup and device-transfer rules. Device manufacturers may handle transfer or backup differently; do not rely on a system backup to recover this gallery.</p>
+<p>Crashlytics retains crash traces and associated identifiers for 90 days before beginning removal from live and backup systems, according to Google's documentation. Analytics data is retained under the property's configured retention settings and Google's service rules; aggregated reports may be retained differently. Removing this app stops future app activity but does not immediately erase diagnostics already processed by Google or exported/shared copies. For privacy or deletion requests, contact the email above; we will help with the information we can identify and control. Do not send private photos or your password when asking for help.</p>
+<h2>6. Security and your choices</h2>
+<p>The app relies on Android's app-private storage isolation and an optional gallery-access password. It does not claim end-to-end or media-file encryption. These safeguards do not guarantee protection on rooted, compromised or unlocked devices. Firebase network transport uses its service security mechanisms. You can delete local media, revoke permissions, clear app data or uninstall the app to stop using it. Export first if you want to keep your media.</p>
+<p>Depending on your location, you may have rights to access, correct or delete personal information, object to processing or raise a complaint with a relevant authority. Contact us to make a request. The app does not require account registration and does not intentionally solicit personal information from children. Contact us if you believe a child has provided personal information.</p>
+<h2>7. Changes and contact</h2>
+<p>We may update this policy when the app's data practices change. The revision date is shown above. Questions about this policy or data handling can be sent to <a href="mailto:smallduanmeng@gmail.com">smallduanmeng@gmail.com</a>.</p></main><footer>Secure Camera · <a href="mailto:smallduanmeng@gmail.com">smallduanmeng@gmail.com</a></footer></body></html>
